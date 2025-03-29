@@ -90,6 +90,15 @@ end)
 
 entity:SetCallback("OnDespawning", function()
     print("Entity is despawning")
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Depther",
+    Desc = "Depth Spawn",
+    Reason = "not found",
+    Image = "rbxassetid://12309073114"
+})
 end)
 
 entity:SetCallback("OnDespawned", function()
