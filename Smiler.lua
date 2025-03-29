@@ -90,6 +90,15 @@ end)
 
 entity:SetCallback("OnDespawning", function()
     print("Entity is despawning")
+local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+---====== Display achievement ======---
+achievementGiver({
+    Title = "Smiler Fail Speed",
+    Desc = "Smiler Is Maximum Faster Running",
+    Reason = "Not Found",
+    Image = "rbxassetid://17651731518"
+})
 end)
 
 entity:SetCallback("OnDespawned", function()
